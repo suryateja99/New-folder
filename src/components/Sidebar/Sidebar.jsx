@@ -49,21 +49,7 @@ const Sidebar = ({ ...props }) => {
             key={key}
           >
             <ListItem button className={classes.itemLink + listItemClasses}>
-              {typeof prop.icon === "string" ? (
-                <Icon
-                  className={classNames(classes.itemIcon, whiteFontClasses, {
-                    [classes.itemIconRTL]: props.rtlActive
-                  })}
-                >
-                  {prop.icon}
-                </Icon>
-              ) : (
-                <prop.icon
-                  className={classNames(classes.itemIcon, whiteFontClasses, {
-                    [classes.itemIconRTL]: props.rtlActive
-                  })}
-                />
-              )}
+             
               <ListItemText
                 primary={props.rtlActive ? prop.rtlName : prop.name}
                 className={classNames(classes.itemText, whiteFontClasses, {
@@ -86,9 +72,7 @@ const Sidebar = ({ ...props }) => {
         })}
         target="_blank"
       >
-        <div className={classes.logoImage}>
-        
-        </div>
+       
         {logoText}
       </a>
     </div>
@@ -139,7 +123,7 @@ const Sidebar = ({ ...props }) => {
           {image !== undefined ? (
             <div
               className={classes.background}
-              style={{ backgroundImage: "url(" + image + ")" }}
+             // style={{ backgroundImage: "url(" + image + ")" }}
             />
           ) : null}
         </Drawer>
@@ -152,7 +136,7 @@ Sidebar.propTypes = {
   classes: PropTypes.object.isRequired,
   rtlActive: PropTypes.bool,
   handleDrawerToggle: PropTypes.func,
-  //bgColor: PropTypes.oneOf(["purple", "blue", "green", "orange", "red"]),
+  bgColor: PropTypes.oneOf(["purple", "blue", "green", "orange", "red"]),
   logo: PropTypes.string,
   image: PropTypes.string,
   logoText: PropTypes.string,

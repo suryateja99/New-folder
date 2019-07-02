@@ -49,7 +49,7 @@ class RTLNavbarLinks extends React.Component {
               className: classes.margin + " " + classes.search
             }}
             inputProps={{
-              placeholder: "جستجو...",
+             // placeholder: "جستجو...",
               inputProps: {
                 "aria-label": "Search"
               }
@@ -68,7 +68,7 @@ class RTLNavbarLinks extends React.Component {
         >
           <Dashboard className={classes.icons} />
           <Hidden mdUp implementation="css">
-            <p className={classes.linkText}>آمارها</p>
+            
           </Hidden>
         </Button>
         <div className={classes.manager}>
@@ -85,10 +85,10 @@ class RTLNavbarLinks extends React.Component {
             className={classes.buttonLink}
           >
             <Notifications className={classes.icons} />
-            <span className={classes.notifications}>۵</span>
+            <span className={classes.notifications}></span>
             <Hidden mdUp implementation="css">
               <p onClick={this.handleClick} className={classes.linkText}>
-                اعلان‌ها
+                
               </p>
             </Hidden>
           </Button>
@@ -119,31 +119,31 @@ class RTLNavbarLinks extends React.Component {
                         onClick={this.handleClose}
                         className={classes.dropdownItem}
                       >
-                        محمدرضا به ایمیل شما پاسخ داد
+                      
                       </MenuItem>
                       <MenuItem
                         onClick={this.handleClose}
                         className={classes.dropdownItem}
                       >
-                        شما ۵ وظیفه جدید دارید
+                    
                       </MenuItem>
                       <MenuItem
                         onClick={this.handleClose}
                         className={classes.dropdownItem}
                       >
-                        از حالا شما با علیرضا دوست هستید
+                        
                       </MenuItem>
                       <MenuItem
                         onClick={this.handleClose}
                         className={classes.dropdownItem}
                       >
-                        اعلان دیگر
+                        
                       </MenuItem>
                       <MenuItem
                         onClick={this.handleClose}
                         className={classes.dropdownItem}
                       >
-                        اعلان دیگر
+                       
                       </MenuItem>
                     </MenuList>
                   </ClickAwayListener>
@@ -161,7 +161,7 @@ class RTLNavbarLinks extends React.Component {
         >
           <Person className={classes.icons} />
           <Hidden mdUp implementation="css">
-            <p className={classes.linkText}>حساب کاربری</p>
+         
           </Hidden>
         </Button>
       </div>

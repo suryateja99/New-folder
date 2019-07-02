@@ -93,7 +93,7 @@ class AdminNavbarLinks extends React.Component {
             className={classes.buttonLink}
           >
             <Notifications className={classes.icons} />
-            <span className={classes.notifications}>5</span>
+           
             <Hidden mdUp implementation="css">
               <p onClick={this.handleClick} className={classes.linkText}>
                 Notification
@@ -123,36 +123,7 @@ class AdminNavbarLinks extends React.Component {
                 <Paper>
                   <ClickAwayListener onClickAway={this.handleCloseNotification}>
                     <MenuList role="menu">
-                      <MenuItem
-                        onClick={this.handleCloseNotification}
-                        className={classes.dropdownItem}
-                      >
-                        Mike John responded to your email
-                      </MenuItem>
-                      <MenuItem
-                        onClick={this.handleCloseNotification}
-                        className={classes.dropdownItem}
-                      >
-                        You have 5 new tasks
-                      </MenuItem>
-                      <MenuItem
-                        onClick={this.handleCloseNotification}
-                        className={classes.dropdownItem}
-                      >
-                        You{"'"}re now friend with Andrew
-                      </MenuItem>
-                      <MenuItem
-                        onClick={this.handleCloseNotification}
-                        className={classes.dropdownItem}
-                      >
-                        Another Notification
-                      </MenuItem>
-                      <MenuItem
-                        onClick={this.handleCloseNotification}
-                        className={classes.dropdownItem}
-                      >
-                        Another One
-                      </MenuItem>
+                     
                     </MenuList>
                   </ClickAwayListener>
                 </Paper>
